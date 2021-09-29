@@ -1,0 +1,25 @@
+{
+  "name": "chemchart",
+  "version": "0.0.1",
+  "description": "chart library for chemical data visualization",
+  "main": "chemchart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sugitlab/chemchart.git"
+  },
+  "keywords": [
+    "chart",
+    "plot",
+    "chromatography",
+    "massspectrometory"
+  ],
+  "author": "sugitlab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sugitlab/chemchart/issues"
+  },
+  "homepage": "https://github.com/sugitlab/chemchart#readme"
+}
