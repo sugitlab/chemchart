@@ -1,0 +1,10 @@
+# Misc.
+
+.DS_Store
+
+# build
+
+dist
+
+# node modules
+node_modules

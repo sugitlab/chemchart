@@ -2,9 +2,14 @@
   "name": "chemchart",
   "version": "0.0.1",
   "description": "chart library for chemical data visualization",
-  "main": "chemchart.js",
+  "main": "./dist/index.js",
+  "types": "./types/chemchart/index.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,12 @@
   "bugs": {
     "url": "https://github.com/sugitlab/chemchart/issues"
   },
-  "homepage": "https://github.com/sugitlab/chemchart#readme"
+  "homepage": "https://github.com/sugitlab/chemchart#readme",
+  "devDependencies": {
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.4.3"
+  }
 }
