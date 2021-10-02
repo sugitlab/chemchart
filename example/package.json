@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/plotly.js-dist-min": "^2.3.0",
     "chemchart": "file:../chemchart",
     "next": "11.1.2",
     "react": "17.0.2",

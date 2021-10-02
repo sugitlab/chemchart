@@ -1,25 +1,27 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import ChemChart from 'chemchart'
+import type { NextPage } from "next"
+import Head from "next/head"
+import Image from "next/image"
+import dynamic from "next/dynamic"
+import styles from "../styles/Home.module.css"
+import { ChemChartProps } from "chemchart";
+
+const PlotNoSSR = dynamic<ChemChartProps>(() => import("chemchart"), {ssr: false, loading: () => <p>loading...</p>})
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
         <title>ChemChart</title>
-        <meta name="description" content="Chart library for Chemical Data Visualization" />
+        <meta
+          name="description"
+          content="Chart library for Chemical Data Visualization"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to ChemChart library.
-        </h1>
-        
-        <ChemChart />
-
+        <h1 className={styles.title}>Welcome to ChemChart library.</h1>
+        <PlotNoSSR useDemoChromatogram />
       </main>
 
       <footer className={styles.footer}>
@@ -28,14 +30,14 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
