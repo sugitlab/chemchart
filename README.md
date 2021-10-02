@@ -1,6 +1,6 @@
 # ChemChart
 
-[Deomo](https://chemchart.vercel.app/)
+[Demo](https://chemchart.vercel.app/)
 
 ## Developer
 
