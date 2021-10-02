@@ -1,6 +1,6 @@
 # ChemChart
 
-[Deomo](https://chemchart-gghxapjqc-sugitlab.vercel.app/)
+[Deomo](https://chemchart.vercel.app/)
 
 ## Developer
 
