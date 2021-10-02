@@ -1,4 +1,4 @@
-# ChemChart
+#ChemChart
 
 hogehoge
 
@@ -23,3 +23,9 @@ npm run dev
 ```
 
 Then, any updates on chemchart code will directry apply to the example app.
+
+## publish
+
+1. `npm version patch/minor/major`
+2. `git tag -a v1.x.x -m "message"`
+3. `npm publish ./`
